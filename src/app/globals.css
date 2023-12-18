@@ -16,6 +16,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -76,3 +80,7 @@ footer {
   height: 100%;
 }
 
+.job:hover h2 {
+  font-size: 1.3rem;
+  transition: all 0.3s ease;  
+}
