@@ -24,4 +24,55 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+    font-family: 'Roboto_Mono', 'Times New Roman', sans-serif;
 }
+
+.navbar {
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  /* background-color: #333; This is a dark grey color, you can change it to whatever you like */
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  @apply text-lg font-semibold;
+}
+
+.navbar li a:hover, .contact:hover {
+  background-color: #111; /* This is a very dark grey color, you can change it to whatever you like */
+  color: white; /* Change text color to white on hover */
+  border-radius: 30px;
+  transition: all 0.3s ease; /* Smooth transition effect */
+}
+
+.site {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+footer {
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.text-container {
+  display: flex;
+  /* align-items: center; This is what was causing the issue 
+  justify-content: flex-start; */
+  height: 100%;
+}
+
