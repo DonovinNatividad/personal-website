@@ -1,5 +1,4 @@
 import React from 'react';
-import '../globals.css';
 
 interface JobProps {
     title: string;
@@ -10,7 +9,7 @@ interface JobProps {
 
 const Job: React.FC<JobProps> = ({ title, date, description, skills }) => {
     return (
-        <div className='job w-full h-56 flex flex-col rounded-xl hover:bg-rose-300 hover:ring-1 hover:ring-white ring-transparent transition-all duration-200 p-3 -ml-3 mb-3'>
+        <div className='job w-full h-auto md:h-56 flex flex-col rounded-xl hover:bg-rose-300 hover:ring-1 hover:ring-white ring-transparent transition-all duration-200 p-3 -ml-3 mb-3'>
             <h2 className='text-xl font-semibold'>{title}</h2>
             <p>{date}</p>
             <p className='mt-3'>{description}</p>
