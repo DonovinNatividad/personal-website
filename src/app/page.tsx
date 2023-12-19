@@ -93,14 +93,14 @@ const Page: React.FC = () => {
                   title="Personal Website" 
                   description="A fun project I did to gain better experience in making frontend UIs and designing websites. Developed using Next.js, TypeScript, Tailwind CSS, and React." 
                   technologies={['Next.js', 'TypeScript', 'Tailwind CSS', 'React']} 
-                  image="/portfolioimg.jpg" 
+                  image="/portfolioimg.JPG" 
                   githubLink="https://github.com/DonovinNatividad/personal-website" 
                 />
                 <Project 
                   title="Personal Blog" 
                   description="A beautiful static website where I post blogs about topics I find interesting. It's developed using Astro and React. The site is currently deployed, and I'm working on creating content for it." 
                   technologies={['Astro', 'React']} 
-                  image="/blogimg.jpg" 
+                  image="/blogimg.JPG" 
                   githubLink="https://donovinnatividad.github.io/personal-blog/" 
                 />
               </div>
