@@ -16,22 +16,23 @@ const Page: React.FC = () => {
               <Image src="/letter-d.png" alt=" the letter d" width={50} height={50} />
             </a>
             
-            <a href="https://github.com/DonovinNatividad">
+            <a target='_blank' href="https://github.com/DonovinNatividad">
               <div className='flex items-center justify-center'>
                 <Badge socialMediaName="Github" icon="/githubicon.png"></Badge>
               </div>
             </a>
 
-            {/* <a href="https://www.linkedin.com/in/donovin-natividad/">
-              <div className='flex items-center justify-center w-8 h-8 ml-2'>
-                <Badge socialMediaName="LinkedIn" icon="/linkedinlogo.png"></Badge>
+            <a target='_blank' href="https://www.linkedin.com/in/donovinnatividad">
+              <div className='flex items-center justify-center w-10 h-10 ml-1'>
+                <Badge socialMediaName="LinkedIn" icon="/linkedin-logo.png"></Badge>
               </div>
-            </a> */}
+            </a>
             
           </div>
 
           <div className='flex flex-col sm:flex-row items-center'>
             <li><a href="#experience" className='text-lg p-2'>Experience</a></li>
+            <li><a target='_blank' href="/DonovinNatividadResume.pdf" className='text-lg p-2'>Resume</a></li>
             <li><a href="#projects" className="text-lg p-2">Projects</a></li>
             <li><a href="#contact" className="text-lg p-2">Contact</a></li>
           </div>
@@ -56,11 +57,11 @@ const Page: React.FC = () => {
           <div className='self-start mt-6 text-xl text-left max-w-4xl overflow-auto '>
             {"I'm someone who enjoys building things and learning new technologies. I'm currently a student at "}
             <span className='font-extrabold'>
-              {"The Ohio State University "}
+              The Ohio State University
             </span>  
-            {"studying Computer Science with a specialization in Software Engineering. I'm very interested in AI and Machine Learning and how it can be used to improve the lives of people. I'm also interested in how we can use technology to improve the lives of people in developing countries. I'll be working at "}
+            {" studying Computer Science with a specialization in Software Engineering. I'm very interested in AI and Machine Learning and how it can be used to improve our lives. I'm also interested in how we can use technology to improve the lives of people in developing countries. I worked at "}
             <span className='font-extrabold'>
-              {"JP Morgan Chase & Co. "}
+              {"JPMorgan Chase & Co. "}
             </span>  
               {"as a "}
               <span className='font-extrabold'>
@@ -70,7 +71,7 @@ const Page: React.FC = () => {
 
           <div id="experience" className='flex flex-col items-start pt-36 w-full'>
             <h1 className='text-6xl font-semibold mb-6 text-center underline'>{"Experience"}</h1>
-            <Job title="Software Engineering Intern · JP Morgan Chase & Co." date="JUNE 2024 - AUG 2024" description="I will be creating Full-Stack web applications that help to streamline the firm's business operations and gain experience creating quality software used for years to come." skills={['Typescript ', 'Database Management']} />
+            <Job title="Software Engineering Intern · JPMorgan Chase & Co." date="JUNE 2024 - AUG 2024" description="I will be creating Full-Stack web applications that help to streamline the firm's business operations and gain experience creating quality software used for years to come." skills={['React', 'Typescript', 'FastAPI', 'AWS Fundamentals', 'Database Management']} />
             <Job title="CS Department Teaching Assistant · The Ohio State University" date="AUG 2023 - DEC 2023" description="Graded homeworks, giving feedback and corrections to students, and held office hours for students taking Foundations of Computer Science I at The Ohio State University for the fall semester. Graded concepts like asymptotic complexity, discrete structures, and graph theory." skills={['Teaching', 'Communication', 'Computer Science Fundamentals', ]} />
             <Job title="AI and Web Developer Intern · Emerge Inc." date="MAY 2023 - AUG 2023" description="Learned how to create full-stack web applications from the frontend, creating user interfaces, to the backend creating routes in flask, creating data in databases and pulling data to display. Used ChatGPT to create innovative and inspiring applications that utilized the power of generative AI to speed up company's workflow" skills={['Flask', 'HTML', 'CSS', 'Prompt Engineering', 'Database Management', 'Hosting']} />
           </div>
@@ -110,7 +111,7 @@ const Page: React.FC = () => {
         </div>
       </main>
       <footer id="contact" className='mb-16'>
-      <a href="mailto:Natividad.10@osu.edu" className='contact text-center text-3xl p-4 hover:text-4xl'>
+      <a href="mailto:donovinnatividad@gmail.com" className='contact text-center text-3xl p-4 hover:text-4xl'>
         Need to contact me?
       </a>
       </footer>
