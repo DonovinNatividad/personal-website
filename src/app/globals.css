@@ -75,12 +75,5 @@ footer {
 
 .text-container {
   display: flex;
-  /* align-items: center; This is what was causing the issue 
-  justify-content: flex-start; */
   height: 100%;
-}
-
-.job:hover h2 {
-  font-size: 1.3rem;
-  transition: all 0.3s ease;  
 }

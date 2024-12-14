@@ -4,7 +4,7 @@ import LanguageCard from './components/LanguageCard';
 import Badge from './components/Badge';
 import Job from './components/Job';
 import Project from './components/Project';
-import { projectData } from '../../public/componentData';
+import { projectData, jobData } from '../../public/componentData';
 
 const Page: React.FC = () => {
   return (
@@ -33,55 +33,76 @@ const Page: React.FC = () => {
 
           <div className='flex flex-col sm:flex-row items-center'>
             <li><a href="#experience" className='text-lg p-2'>Experience</a></li>
-            <li><a target='_blank' href="/DonovinNatividadResume.pdf" className='text-lg p-2'>Resume</a></li>
+            <li><a target='_blank' href="/Website_Resume.pdf" className='text-lg p-2'>Resume</a></li>
             <li><a href="#projects" className="text-lg p-2">Projects</a></li>
             <li><a href="#contact" className="text-lg p-2">Contact</a></li>
           </div>
         </ul>
         </nav>
       </header>
-      <main className="content flex-grow flex-col flex items-center justify-start container mx-auto px-4 align w-full max-w-7xl">
-        <div className='text-container p-36 flex flex-col items-center justify-start'>
+      <main className="content flex-grow flex-col flex items-center justify-start container mx-auto px-4 align w-full max-w-6xl">
+        <div className='text-container pl-12 pr-12 lg:pt-36 flex flex-col items-center justify-start'>
+          <div className='flex flex-col-reverse lg:flex-row items-center'>  
+            <div id='left' className='mt-8'>
+              <div className='self-start'>
+                <h1 className='text-5xl sm:text-5xl font-bold mb-2'>
+                  {"Hi, my name's Donovin."}
+                  <br />
+                  {"I'm a "}
+                  <span className='font-semibold text-black hover:text-lime-50 transition-colors duration-400'>
+                    {"software engineer"}
+                  </span>
+                  {"."}
+                </h1>
+              </div>
 
-          <div className='w-full'>
-            <h1 className='text-6xl font-bold mb-2'>
-              {"Hi, my name's Donovin."}
-              <br />
-              {"I'm a "}
-              <span className='font-semibold text-black hover:text-lime-50 transition-colors duration-400'>
-                {"software engineer"}
-              </span>
-              {"."}
-            </h1>
+              <div className='self-start mt-6 text-xl text-left max-w-4xl overflow-auto '>
+                {"I'm someone who enjoys building things and learning new technologies. I'm currently a student at "}
+                <span className='font-extrabold'>
+                  The Ohio State University
+                </span>  
+                {" studying Computer Science with a specialization in Software Engineering. I'm very interested in AI and Machine Learning and how it can be used to improve our lives. I'm also interested in how we can use technology to improve the lives of people in developing countries. I worked at "}
+                <span className='font-extrabold'>
+                  {"JPMorgan Chase & Co. "}
+                </span>  
+                  {"as a "}
+                  <span className='font-extrabold'>
+                    {"Software Engineering Intern "}
+                  </span> {"in the summer of 2024."}
+              </div>
+            </div>
+
+            <div id="right" className="flex justify-center w-full sm:w-2/3 lg:w-1/2">
+              <Image
+                className='lg:ml-5 rounded-full'
+                src='/DonovinNatividad.png'
+                width={100}
+                height={100}
+                layout='responsive'
+                quality={100}
+                alt='Picture of Donovin Natividad'
+              />
+            </div>
           </div>
+          
 
-          <div className='self-start mt-6 text-xl text-left max-w-4xl overflow-auto '>
-            {"I'm someone who enjoys building things and learning new technologies. I'm currently a student at "}
-            <span className='font-extrabold'>
-              The Ohio State University
-            </span>  
-            {" studying Computer Science with a specialization in Software Engineering. I'm very interested in AI and Machine Learning and how it can be used to improve our lives. I'm also interested in how we can use technology to improve the lives of people in developing countries. I worked at "}
-            <span className='font-extrabold'>
-              {"JPMorgan Chase & Co. "}
-            </span>  
-              {"as a "}
-              <span className='font-extrabold'>
-                {"Software Engineering Intern "}
-              </span> {"in the summer of 2024."}
-          </div>
-
-          <div id="experience" className='flex flex-col items-start pt-36 w-full'>
+          <div id="experience" className='flex flex-col items-center pt-36 w-full'>
             <h1 className='text-6xl font-semibold mb-6 text-center underline'>{"Experience"}</h1>
-            <Job title="Software Engineering Intern · JPMorgan Chase & Co." date="JUNE 2024 - AUG 2024" description="I will be creating Full-Stack web applications that help to streamline the firm's business operations and gain experience creating quality software used for years to come." skills={['React', 'Typescript', 'FastAPI', 'AWS Fundamentals', 'Database Management']} />
-            <Job title="CS Department Teaching Assistant · The Ohio State University" date="AUG 2023 - DEC 2023" description="Graded homeworks, giving feedback and corrections to students, and held office hours for students taking Foundations of Computer Science I at The Ohio State University for the fall semester. Graded concepts like asymptotic complexity, discrete structures, and graph theory." skills={['Teaching', 'Communication', 'Computer Science Fundamentals', ]} />
-            <Job title="AI and Web Developer Intern · Emerge Inc." date="MAY 2023 - AUG 2023" description="Learned how to create full-stack web applications from the frontend, creating user interfaces, to the backend creating routes in flask, creating data in databases and pulling data to display. Used ChatGPT to create innovative and inspiring applications that utilized the power of generative AI to speed up company's workflow" skills={['Flask', 'HTML', 'CSS', 'Prompt Engineering', 'Database Management', 'Hosting']} />
+            {
+              jobData.map((job) => (
+                <Job
+                  key={job.title}
+                  title={job.title}
+                  date={job.date}
+                  description={job.description}
+                  skills={job.skills}
+                />
+              ))
+            }
           </div>
 
-          <div id="projects">
-
-          </div>
-
-            <div className='flex flex-col items-start pt-36 w-full'>
+          <div id="projects"></div>
+            <div className='flex flex-col items-center pt-36 w-full'>
               <h1 className='text-6xl font-semibold mb-6 text-center underline'>{"Projects"}</h1>
               <div className='flex flex-col space-y-4 items-center w-full'>
                 {projectData.map((project) => (
@@ -96,14 +117,12 @@ const Page: React.FC = () => {
                 ))}
               </div>
             </div>
-
-
         </div>
       </main>
-      <footer id="contact" className='mb-16'>
-      <a href="mailto:donovinnatividad@gmail.com" className='contact text-center text-3xl p-4 hover:text-4xl'>
-        Need to contact me?
-      </a>
+      <footer id="contact" className='mt-16 mb-16'>
+        <a href="mailto:donovinnatividad@gmail.com" className='contact text-center text-3xl p-4 hover:text-4xl'>
+          Need to contact me?
+        </a>
       </footer>
     </div>
   );
