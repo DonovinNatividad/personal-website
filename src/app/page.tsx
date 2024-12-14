@@ -41,7 +41,7 @@ const Page: React.FC = () => {
         </nav>
       </header>
       <main className="content flex-grow flex-col flex items-center justify-start container mx-auto px-4 align w-full max-w-6xl">
-        <div className='text-container pl-12 pr-12 lg:pt-36 flex flex-col items-center justify-start'>
+        <div className='text-container pl-14 pr-14 lg:pt-36 flex flex-col items-center justify-start'>
           <div className='flex flex-col-reverse lg:flex-row items-center'>  
             <div id='left' className='mt-8 lg:w-4/7'>
               <div className='self-start'>
