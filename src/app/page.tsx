@@ -12,7 +12,7 @@ const Page: React.FC = () => {
       <header>
         <nav>
         <ul className="navbar flex flex-col sm:flex-row justify-end items-center m-6 bg-transparent">
-          <div className='fixed top-0 left-0 m-4 flex flex-col space-y-4'>
+          <div className='fixed top-0 left-0 m-4 mr-8 flex flex-col space-y-4'>
             <a href="#">
               <Image src="/letter-d.png" alt=" the letter d" width={50} height={50} />
             </a>
@@ -28,7 +28,6 @@ const Page: React.FC = () => {
                 <Badge socialMediaName="LinkedIn" icon="/linkedin-logo.png"></Badge>
               </div>
             </a>
-            
           </div>
 
           <div className='flex flex-col sm:flex-row items-center'>
