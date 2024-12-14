@@ -39,7 +39,7 @@ export const jobData: JobData[] = [
     {
         title: "Software Engineering Intern at JPMorgan Chase & Co.",
         date: "JUNE 2024 - AUG 2024",
-        description: "I will be creating Full-Stack web applications that help to streamline the firm's business operations and gain experience creating quality software used for years to come.",
+        description: "I contributed to an internal web application that helped to streamline the firm's business operations. Additionally, I participated in a global hackathon where I placed in the top 10 out of 200 teams.",
         skills: ["React", "Typescript", "FastAPI", "AWS Fundamentals", "Database Management"]
     },
     {

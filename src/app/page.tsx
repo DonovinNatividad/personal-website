@@ -43,38 +43,41 @@ const Page: React.FC = () => {
       <main className="content flex-grow flex-col flex items-center justify-start container mx-auto px-4 align w-full max-w-6xl">
         <div className='text-container pl-12 pr-12 lg:pt-36 flex flex-col items-center justify-start'>
           <div className='flex flex-col-reverse lg:flex-row items-center'>  
-            <div id='left' className='mt-8'>
+            <div id='left' className='mt-8 lg:w-4/7'>
               <div className='self-start'>
-                <h1 className='text-5xl sm:text-5xl font-bold mb-2'>
-                  {"Hi, my name's Donovin."}
+                <h1 className='text-5xl lg:text-4xl font-bold mb-2'>
+                  {"Hi, I'm Donovin,"}
                   <br />
-                  {"I'm a "}
+                  {"a Software Engineer "}
                   <span className='font-semibold text-black hover:text-lime-50 transition-colors duration-400'>
-                    {"software engineer"}
+                    {"creating impactful solutions"}
                   </span>
                   {"."}
                 </h1>
               </div>
 
-              <div className='self-start mt-6 text-xl text-left max-w-4xl overflow-auto '>
-                {"I'm someone who enjoys building things and learning new technologies. I'm currently a student at "}
-                <span className='font-extrabold'>
-                  The Ohio State University
-                </span>  
-                {" studying Computer Science with a specialization in Software Engineering. I'm very interested in AI and Machine Learning and how it can be used to improve our lives. I'm also interested in how we can use technology to improve the lives of people in developing countries. I worked at "}
-                <span className='font-extrabold'>
-                  {"JPMorgan Chase & Co. "}
-                </span>  
-                  {"as a "}
-                  <span className='font-extrabold'>
-                    {"Software Engineering Intern "}
-                  </span> {"in the summer of 2024."}
-              </div>
+              <div className='self-start mt-6 text-xl text-left max-w-4xl overflow-auto'>
+              {"I'm a lifelong learner and builder passionate about using technology to solve real-world problems. As a Computer Science student at "}
+              <span className='font-extrabold'>
+                The Ohio State University
+              </span>
+              {" specializing in Software Engineering, I focus on creating innovative solutions with Artificial Intelligence and Machine Learning. During my 2024 "}
+              <span className='font-extrabold'>
+                Software Engineering internship
+              </span>
+              {" at "}
+              <span className='font-extrabold'>
+                JPMorgan Chase & Co.
+              </span>
+              {", I developed features that improved user experiences and demonstrated my ability to deliver scalable solutions. I’m eager to continue leveraging emerging technologies to foster inclusivity and drive progress globally."}
             </div>
 
-            <div id="right" className="flex justify-center w-full sm:w-2/3 lg:w-1/2">
+          </div>
+
+
+            <div id="right" className="flex justify-center w-full sm:w-2/3 lg:ml-5 lg:w-3/7">
               <Image
-                className='lg:ml-5 rounded-full'
+                className=' rounded-full'
                 src='/DonovinNatividad.png'
                 width={100}
                 height={100}
