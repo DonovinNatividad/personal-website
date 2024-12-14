@@ -12,7 +12,7 @@ const Page: React.FC = () => {
       <header>
         <nav>
         <ul className="navbar flex flex-col sm:flex-row justify-end items-center m-6 bg-transparent">
-          <div className='fixed top-0 left-0 m-4 mr-8 flex flex-col space-y-4'>
+          <div className='fixed top-0 left-0 m-4 flex flex-col space-y-4'>
             <a href="#">
               <Image src="/letter-d.png" alt=" the letter d" width={50} height={50} />
             </a>
@@ -39,7 +39,7 @@ const Page: React.FC = () => {
         </ul>
         </nav>
       </header>
-      <main className="content flex-grow flex-col flex items-center justify-start container mx-auto px-4 align w-full max-w-6xl">
+      <main className="content flex-grow flex-col flex items-center justify-start container mx-auto px-4 align sm:max-w-min md:w-full lg:max-w-7xl">
         <div className='text-container pl-14 pr-14 lg:pt-36 flex flex-col items-center justify-start'>
           <div className='flex flex-col-reverse lg:flex-row items-center'>  
             <div id='left' className='mt-8 lg:w-4/7'>
