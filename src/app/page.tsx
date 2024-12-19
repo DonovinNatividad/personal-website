@@ -13,7 +13,7 @@ const Page: React.FC = () => {
       
       <Navbar/>
       
-      <main className="content flex-grow flex-col flex items-center justify-start container mx-auto px-4 align sm:max-w-min md:w-full lg:max-w-7xl">
+      <main className="content flex-grow flex-col flex items-center justify-start container mx-auto pt-16 md:px-4 align sm:max-w-min md:w-full lg:max-w-7xl">
         <div className='text-container pl-14 pr-14 lg:pt-36 flex flex-col items-center justify-start'>
           <div className='flex flex-col-reverse lg:flex-row items-center'>  
             <div id='left' className='mt-8 lg:w-4/7'>

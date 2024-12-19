@@ -56,7 +56,7 @@ function Hamburger() {
 
             {/* Hamburger Icon */}
             <div
-                className="fixed top-4 right-4 z-50 flex flex-col items-center justify-center space-y-2 p-4 cursor-pointer"
+                className="fixed top-4 right-4 z-50 h-16 flex flex-col items-center justify-center space-y-2 p-4 cursor-pointer"
                 onClick={toggleHamburger}
             >
                 <div className="w-8 h-1 bg-gray-800 rounded"></div>
