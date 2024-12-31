@@ -24,7 +24,8 @@ function Hamburger() {
                 }`}
             >
                 <div className="flex justify-between items-center p-4 border-b border-gray-700">
-                    <h2 className="text-lg font-bold">Menu</h2>
+                    {/* <h2 className="text-lg font-bold">Menu</h2> */}
+                    <a href="#top" className="text-lg block font-bold hover:text-gray-300">Menu</a>
                     <button
                         onClick={toggleHamburger}
                         className="text-white focus:outline-none"

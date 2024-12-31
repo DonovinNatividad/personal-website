@@ -9,12 +9,10 @@ import { projectData, jobData } from '../../public/componentData';
 
 const Page: React.FC = () => {
   return (
-    <div className="site flex flex-col min-h-screen bg-gradient-to-r from-rose-500 to-slate-300 text-black">
-      
+    <div id='top' className="site flex flex-col min-h-screen bg-gradient-to-r from-rose-500 to-slate-300 text-black">
       <Navbar/>
-      
-      <main className="content flex-grow flex-col flex items-center justify-start container mx-auto pt-16 md:px-4 align sm:max-w-min md:w-full lg:max-w-7xl">
-        <div className='text-container pl-14 pr-14 lg:pt-36 flex flex-col items-center justify-start'>
+      <main className="content flex-grow flex-col flex items-center justify-start container mx-auto pt-16 md:pt-0 md:px-4 align sm:max-w-min md:w-full lg:max-w-7xl">
+        <div className='text-container pl-14 pr-14 lg:pt-16 flex flex-col items-center justify-start'>
           <div className='flex flex-col-reverse lg:flex-row items-center'>  
             <div id='left' className='mt-8 lg:w-4/7'>
               <div className='self-start'>
