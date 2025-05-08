@@ -90,7 +90,13 @@ const Page: React.FC = () => {
           {/* Add blog to nav bar as link element <a> */}
           {/* Create a Linktree for all of my socials */}
           {/* Pick out a better profile picture of myself to look better */}
+          {/* Change the font of the website as I think it could be better */}
+          {/* Use Coolors to pick out new color palette to make website look great */}
+          {/* SVGRepo for icons */}
+          {/* Add custom highlighted text color */}
+          {/* Add better footer to my website */}
           
+
 
           <div id="projects"></div>
             <div className='flex flex-col items-center pt-36 w-full'>
