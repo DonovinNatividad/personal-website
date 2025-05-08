@@ -28,19 +28,19 @@ const Page: React.FC = () => {
               </div>
 
               <div className='self-start mt-6 text-xl text-left max-w-4xl overflow-auto'>
-              {"I'm a lifelong learner and builder passionate about using technology to solve real-world problems. As a Computer Science student at "}
+              {"I'm a lifelong learner and builder passionate about using technology to solve real-world problems. I am a Computer Science Graduate from "}
               <span className='font-extrabold'>
                 The Ohio State University
               </span>
-              {" specializing in Software Engineering, I focus on creating innovative solutions with Artificial Intelligence and Machine Learning. During my 2024 "}
+              {" specializing in Software Engineering. I love learning about new programming technologies and building out side-projects. During my 2024 "}
               <span className='font-extrabold'>
-                Software Engineering internship
+                Software Engineering Internship
               </span>
               {" at "}
               <span className='font-extrabold'>
                 JPMorgan Chase & Co.
               </span>
-              {", I developed features that improved user experiences and demonstrated my ability to deliver scalable solutions. I’m eager to continue leveraging emerging technologies to foster inclusivity and drive progress globally."}
+              {", I had the pleasure of working on an internal video-sharing platform where I created RESTful APIs, Front-end components in React, and learned about cloud technologies like AWS, earning my Certified Cloud Practitioner certification."}
             </div>
 
           </div>
@@ -74,6 +74,23 @@ const Page: React.FC = () => {
               ))
             }
           </div>
+
+          {/* Add section for Hackathon wins! */}
+          {/* Add little button for easily going back up to the top of webpage */}
+          {/* Add animations to HTML elements like text animation*/}
+          {/* Lean into more icons specifically for Experience section */}
+          {/* Add skills section for technologies I am familiar with adding years of experience for each language, etc */}
+          {/* Improve projects section by spreading out the cards better so users can see multiple at one time side by side, updating the projects that are being shown, redoing the structure might be better */}
+          {/* Improve need to contact me section with form so user's can easily do it */}
+          {/* Change color gradient background */}
+          {/* Add night and day mode with animation */}
+          {/* Add page for books I've read */}
+          {/* Add an interests section for employers to view to get a sense of who I am */}
+          {/* remove blog from projects section along with my website and add Labyrinth and something else like an AI project or Computer vision project to look better*/}
+          {/* Add blog to nav bar as link element <a> */}
+          {/* Create a Linktree for all of my socials */}
+          {/* Pick out a better profile picture of myself to look better */}
+          
 
           <div id="projects"></div>
             <div className='flex flex-col items-center pt-36 w-full'>
