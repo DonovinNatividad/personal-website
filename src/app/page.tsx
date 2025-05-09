@@ -25,13 +25,15 @@ const Page: React.FC = () => {
   return (
     <div id='top' className="site flex flex-col min-h-screen bg-gradient-to-r from-rose-500 to-slate-300 text-black">
       <Navbar />
-      
+
+      {/* Main section of website */}
       <main className="content flex-grow flex-col flex items-center justify-start container mx-auto pt-16 md:pt-0 md:px-4 align sm:max-w-min md:w-full lg:max-w-7xl">
         <Hero />
         <Jobs />
         <Projects />
       </main>
 
+      {/* Footer of website */}
       <footer id="contact" className='mt-16 mb-32'>
         <a href="mailto:donovinnatividad@gmail.com" className='contact text-center text-4xl p-4'>
           Contact me
