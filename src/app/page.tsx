@@ -1,9 +1,8 @@
 import React from 'react';
-import Image from 'next/image';
 import Navbar from './components/Navbar';
-import Job from './components/Job';
-import { jobData } from '../../public/componentData';
 import Projects from './components/Projects';
+import Jobs from './components/Jobs';
+import Hero from './components/Hero';
 
 // TODO:
            {/* Add little button for easily going back up to the top of webpage */}
@@ -25,74 +24,14 @@ import Projects from './components/Projects';
 const Page: React.FC = () => {
   return (
     <div id='top' className="site flex flex-col min-h-screen bg-gradient-to-r from-rose-500 to-slate-300 text-black">
-      <Navbar/>
+      <Navbar />
+      
       <main className="content flex-grow flex-col flex items-center justify-start container mx-auto pt-16 md:pt-0 md:px-4 align sm:max-w-min md:w-full lg:max-w-7xl">
-        <div className='text-container pl-14 pr-14 lg:pt-16 flex flex-col items-center justify-start'>
-          <div className='flex flex-col-reverse lg:flex-row items-center'>  
-            <div id='left' className='mt-8 lg:w-4/7'>
-              <div className='self-start'>
-                <h1 className='text-5xl lg:text-4xl font-bold mb-2'>
-                  {"Hi, I'm Donovin,"}
-                  <br />
-                  {"a Software Engineer "}
-                  <span className='font-semibold text-black hover:text-lime-50 transition-colors duration-400'>
-                    {"creating impactful solutions"}
-                  </span>
-                  {"."}
-                </h1>
-              </div>
-
-              <div className='self-start mt-6 text-xl text-left max-w-4xl overflow-auto'>
-              {"I'm a lifelong learner and builder passionate about using technology to solve real-world problems. I am a Computer Science Graduate from "}
-              <span className='font-extrabold'>
-                The Ohio State University
-              </span>
-              {" specializing in Software Engineering. I love learning about new programming technologies and building out side-projects. During my 2024 "}
-              <span className='font-extrabold'>
-                Software Engineering Internship
-              </span>
-              {" at "}
-              <span className='font-extrabold'>
-                JPMorgan Chase & Co.
-              </span>
-              {", I had the pleasure of working on an internal video-sharing platform where I created RESTful APIs, Front-end components in React, and learned about cloud technologies like AWS, earning my Certified Cloud Practitioner certification."}
-            </div>
-
-          </div>
-
-
-            <div id="right" className="flex justify-center w-full mt-10 md:mt-0 sm:w-2/3 lg:ml-5 lg:w-3/7">
-              <Image
-                className=' rounded-full'
-                src='/DonovinNatividad.png'
-                width={100}
-                height={100}
-                layout='responsive'
-                quality={100}
-                alt='Picture of Donovin Natividad'
-              />
-            </div>
-          </div>
-
-          <div id="experience" className='flex flex-col items-center pt-36 w-full'>
-            <h1 className='text-6xl font-semibold mb-6 text-center underline'>{"Experience"}</h1>
-            {
-              jobData.map((job) => (
-                <Job
-                  key={job.title}
-                  title={job.title}
-                  date={job.date}
-                  description={job.description}
-                  skills={job.skills}
-                />
-              ))
-            }
-          </div>
-
-
-          <Projects/>
-        </div>
+        <Hero />
+        <Jobs />
+        <Projects />
       </main>
+
       <footer id="contact" className='mt-16 mb-32'>
         <a href="mailto:donovinnatividad@gmail.com" className='contact text-center text-4xl p-4'>
           Contact me
