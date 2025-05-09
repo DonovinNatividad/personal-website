@@ -1,11 +1,26 @@
 import React from 'react';
 import Image from 'next/image';
-import LanguageCard from './components/LanguageCard';
-import Badge from './components/Badge';
 import Navbar from './components/Navbar';
 import Job from './components/Job';
-import Project from './components/Project';
-import { projectData, jobData } from '../../public/componentData';
+import { jobData } from '../../public/componentData';
+import Projects from './components/Projects';
+
+// TODO:
+           {/* Add little button for easily going back up to the top of webpage */}
+          {/* Add animations to HTML elements like text animation*/}
+          {/* Lean into more icons specifically for Experience section */}
+          {/* Improve projects section by spreading out the cards better so users can see multiple at one time side by side, updating the projects that are being shown, redoing the structure might be better */}
+          {/* Improve need to contact me section with form so user's can easily do it */}
+          {/* Change color gradient background */}
+          {/* Add night and day mode with animation */}
+          {/* Add an interests section for employers to view to get a sense of who I am */}
+          {/* remove blog from projects section along with my website and add Labyrinth and something else like an AI project or Computer vision project to look better*/}
+          {/* Pick out a better profile picture of myself to look better */}
+          {/* Change the font of the website as I think it could be better */}
+          {/* Use Coolors to pick out new color palette to make website look great */}
+          {/* SVGRepo for icons */}
+          {/* Add custom highlighted text color */}
+          {/* Add better footer to my website */}
 
 const Page: React.FC = () => {
   return (
@@ -58,7 +73,6 @@ const Page: React.FC = () => {
               />
             </div>
           </div>
-          
 
           <div id="experience" className='flex flex-col items-center pt-36 w-full'>
             <h1 className='text-6xl font-semibold mb-6 text-center underline'>{"Experience"}</h1>
@@ -75,50 +89,13 @@ const Page: React.FC = () => {
             }
           </div>
 
-          {/* Add section for Hackathon wins! */}
-          {/* Add little button for easily going back up to the top of webpage */}
-          {/* Add animations to HTML elements like text animation*/}
-          {/* Lean into more icons specifically for Experience section */}
-          {/* Add skills section for technologies I am familiar with adding years of experience for each language, etc */}
-          {/* Improve projects section by spreading out the cards better so users can see multiple at one time side by side, updating the projects that are being shown, redoing the structure might be better */}
-          {/* Improve need to contact me section with form so user's can easily do it */}
-          {/* Change color gradient background */}
-          {/* Add night and day mode with animation */}
-          {/* Add page for books I've read */}
-          {/* Add an interests section for employers to view to get a sense of who I am */}
-          {/* remove blog from projects section along with my website and add Labyrinth and something else like an AI project or Computer vision project to look better*/}
-          {/* Add blog to nav bar as link element <a> */}
-          {/* Create a Linktree for all of my socials */}
-          {/* Pick out a better profile picture of myself to look better */}
-          {/* Change the font of the website as I think it could be better */}
-          {/* Use Coolors to pick out new color palette to make website look great */}
-          {/* SVGRepo for icons */}
-          {/* Add custom highlighted text color */}
-          {/* Add better footer to my website */}
-          
 
-
-          <div id="projects"></div>
-            <div className='flex flex-col items-center pt-36 w-full'>
-              <h1 className='text-6xl font-semibold mb-6 text-center underline'>{"Projects"}</h1>
-              <div className='flex flex-col space-y-4 items-center w-full'>
-                {projectData.map((project) => (
-                  <Project 
-                    key={project.title}
-                    title={project.title}
-                    description={project.description}
-                    technologies={project.technologies}
-                    image={project.image}
-                    githubLink={project.githubLink}
-                  />
-                ))}
-              </div>
-            </div>
+          <Projects/>
         </div>
       </main>
-      <footer id="contact" className='mt-16 mb-16'>
-        <a href="mailto:donovinnatividad@gmail.com" className='contact text-center text-3xl p-4 hover:text-4xl'>
-          Need to contact me?
+      <footer id="contact" className='mt-16 mb-32'>
+        <a href="mailto:donovinnatividad@gmail.com" className='contact text-center text-4xl p-4'>
+          Contact me
         </a>
       </footer>
     </div>
