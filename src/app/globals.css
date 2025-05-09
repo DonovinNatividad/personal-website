@@ -51,7 +51,7 @@ body {
   @apply text-lg font-semibold;
 }
 
-.navbar li a:hover, .contact:hover {
+.navbar li a:hover, .contact {
   background-color: #111; /* This is a very dark grey color, you can change it to whatever you like */
   color: white; /* Change text color to white on hover */
   border-radius: 30px;
